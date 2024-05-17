@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Virtual World</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+
+    
+
+    <div id="output"></div>
+    Toggle Animation
+        <button type="button" id="animationLightOn"> Light Animation On</button>
+        <button type="button" id="animationLightOff"> Light Animation Off</button>
+    <p>
+      Light x <input type="range" min="-250" max="250" value="0" class="slider" id="lightX" > 
+      Light y <input type="range" min="-250" max="250" value="0" class="slider" id="lightY" > 
+      Light z <input type="range" min="-250" max="250" value="0" class="slider" id="lightZ" > 
+    <p>
+      
+        Red <input type="range" min="0" max="100" value="100" class="slider" id="redSlider">
+    <p>
+        Green <input type="range" min="0" max="100" value="0" class="slider" id="greenSlider">
+    <p>
+        Blue <input type="range" min="0" max="100" value="0" class="slider" id="blueSlider">
+
+      <p>
+      <button type="button" id="lightOn">Light On</button>
+      <button type="button" id="lightOff"> Light Off</button>
+    <h2 id =wining>When you Animate the animal you can see the normals, represented by color, of faces change correctly. As it moves the colors change to the correct face. If it still hard to see I added a rotating cube to the right to make it more obvious</h2>
+    <h3>Pro Tip: If lost in maze place or delete blocks so you know youve been there already!</h3>
+    <p>
+        First joint of tentacle <input type="range" min="-5" max="15" value="5" class="slider" id="yellowSlider"><br>
+    <p>
+        Second joint of tentacle <input type="range" min="0" max="5" value="5" class="slider" id="magentaSlider"><br>
+
+    <p>
+          Third joint of tentacle <input type="range" min="-10" max="10" value="5" class="slider" id="finalSlider"><br>
+    <p>
+        Toggle Animation
+        <button type="button" id="animationYellowOn">On</button>
+        <button type="button" id="animationYellowOff">Off</button>
+
+    <br>
+    <button type="button" id="normalOn">Normals On</button>
+    <button type="button" id="normalOff">Normals Off</button>
+    <br>
+    Shift click does a blink for additional animation
+    <br>
+    Use W A S D to move, and Q and E to pan left and right 
+    <br>
+    Drag mouse left, right and up and down to also look around the world. 
+    <br>
+    Use Z and X to add and delete Blocks 
+    <br>
+    Wow factor: switch between O and P to switch between building materials! And lava falling!
+    
+    <br><br>
+    <script src="lib/webgl-utils.js"></script>
+    <script src="lib/webgl-debug.js"></script>
+    <script src="lib/cuon-utils.js"></script>
+    <script src="lib/cuon-matrix.js"></script>
+    <script src="camera.js"></script>
+    <script src="Cube.js"></script>
+    <script src="Sphere.js"></script>
+    <script src="Circle.js"></script>
+    <script src="Cone.js"></script>
+    <script src="Star.js"></script>
+    <script src="Triangle.js"></script>
+    <script src="Point.js"></script>
+    <script src="asg4.js"></script>
+  </body>
+</html>
